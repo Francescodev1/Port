@@ -1,0 +1,87 @@
+/* App.css */
+
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* BACKGROUND */
+.background {
+  position: fixed; /* Fissa il background */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: -1; /* Manda il background dietro al contenuto */
+  pointer-events: none; /* Rende il background non interattivo */
+}
+
+.triangle {
+  width: 25px; /* Riduci la larghezza dei triangoli alla metà */
+  height: auto;
+  margin: 1.5cm; /* Distanza tra i triangoli (3cm tra i centri dei triangoli, quindi 1.5cm di margine) */
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.rotate-clockwise {
+  animation-name: rotateClockwise;
+}
+
+.rotate-counterclockwise {
+  animation-name: rotateCounterclockwise;
+}
+
+@keyframes rotateClockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateCounterclockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+
+
+.ciao {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+.ciao:hover {
+  color: #e3c015;
+}
+
+.ciao2{
+  margin: 20px;
+}
+
+.insta{
+  color: rgb(200, 1, 207);
+}
